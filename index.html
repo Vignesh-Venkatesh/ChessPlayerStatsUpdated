@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="icon" href="Assets/Images/default_player_image.svg" type="image/png">
+        <link rel="shortcut icon" href="Assets/Images/default_player_image.svg" type="image/png">
+
+        <title>Chess Player Stats</title>
+    </head>
+    <body>
+
+            
+
+
+            <div id="search-username">
+                <label for="username">Enter Username</label>
+                <br>
+                <input type="text" id="username">
+            </div>
+            
+
+            <div id="user-not-found" style="display: none;">
+                <p>Sorry, User Not Found <i class="fa-solid fa-triangle-exclamation"></i></p>
+            </div>
+
+            <div id="player-details-display-info" style="display: none;">
+                <div id="player-details-display-info-img">
+                    <img src="" alt="" id="player-details-avatar">
+                </div>
+                <div id="player-details-display-info-1">
+                    <h1 id="player-details-username"></h1>
+                    <h2 id="player-details-name"></h2>
+                    <h3 id="player-details-id"></h3>
+                    <a target="_blank" id="player-details-link"></a>
+                </div>
+                <div id="player-details-display-info-2">
+                    <h2 id="player-details-streamer" style="display: none;">Yes</h2>
+                    <h2 id="player-details-followers"></h2>
+                    <h2 id="player-details-joined"></h2>
+                    <h2 id="player-details-last-online"></h2>
+                </div>
+                
+            </div>
+
+            <div id="player-details-wins-loss-draw" style="display: none;">
+                <div id="bullet-stats">
+                    <h1>Bullet <i class="fa-solid fa-jet-fighter"></i></h1>
+                    <hr>
+                    <p id="bullet-stats-games-played"></p>
+                    <p id="bullet-stats-wins"></p>
+                    <p id="bullet-stats-loss"></p>
+                    <p id="bullet-stats-draws"></p>
+                </div>
+
+                <div id="blitz-stats">
+                    <h1>Blitz <i class="fa-solid fa-bolt-lightning"></i></h1>
+                    <hr>
+                    <p id="blitz-stats-games-played"></p>
+                    <p id="blitz-stats-wins"></p>
+                    <p id="blitz-stats-loss"></p>
+                    <p id="blitz-stats-draws"></p>
+                </div>
+
+                <div id="rapid-stats">
+                    <h1>Rapid <i class="fa-solid fa-stopwatch"></i></h1>
+                    <hr>
+                    <p id="rapid-stats-games-played"></p>
+                    <p id="rapid-stats-wins"></p>
+                    <p id="rapid-stats-loss"></p>
+                    <p id="rapid-stats-draws"></p>
+                </div>
+            </div>
+
+            <div id="player-details-current-stats-info" style="display: none;">
+
+                <div id="current-stats">
+                    <p>Current Rating</p>
+                </div>
+
+                <div id="current-bullet-info">
+                    <h1>Bullet <i class="fa-solid fa-jet-fighter"></i></h1>
+                    <hr>
+                    <h2 id="current-bullet-info-score">9999</h2>
+                    <!-- <p id="current-bullet-info-matches">3123/1231/1231</p> -->
+                </div>
+
+                <div id="current-blitz-info">
+                    <h1>Blitz <i class="fa-solid fa-bolt-lightning"></i></h1>
+                    <hr>
+                    <h2 id="current-blitz-info-score">9999</h2>
+                    <!-- <p id="current-blitz-info-matches">3123/1231/1231</p> -->
+                </div>
+
+                <div id="current-rapid-info">
+                    <h1>Rapid <i class="fa-solid fa-stopwatch"></i></h1>
+                    <hr>
+                    <h2 id="current-rapid-info-score">9999</h2>
+                    <!-- <p id="current-rapid-info-matches">3123/1231/1231</p> -->
+                </div>
+            </div>
+
+            <div id="player-details-best-stats-info" style="display: none;">
+
+                <div id="best-stats">
+                    <p>Best Rating</p>
+                </div>
+
+                <div id="best-bullet-info">
+                    <h1>Bullet <i class="fa-solid fa-jet-fighter"></i></h1>
+                    <hr>
+                    <h2 id="best-bullet-info-score">9999</h2>
+                    <!-- <p id="best-bullet-info-matches">3123/1231/1231</p> -->
+                </div>
+
+                <div id="best-blitz-info">
+                    <h1>Blitz <i class="fa-solid fa-bolt-lightning"></i></h1>
+                    <hr>
+                    <h2 id="best-blitz-info-score">9999</h2>
+                    <!-- <p id="best-blitz-info-matches">3123/1231/1231</p> -->
+                </div>
+
+                <div id="best-rapid-info">
+                    <h1>Rapid <i class="fa-solid fa-stopwatch"></i></h1>
+                    <hr>
+                    <h2 id="best-rapid-info-score">9999</h2>
+                    <!-- <p id="best-rapid-info-matches">3123/1231/1231</p> -->
+                </div>
+            </div>
+
+        
+            <p class="footer">Made with 🧡 by <a target="_blank" href="https://github.com/Vignesh-Venkatesh">Vignesh</a></p>
+        
+
+        <script type="module" src="JS/fetchData.js"></script>
+        <script type="module" src="JS/playerDetails.js"></script>
+        <!-- <script type="module" src="JS/playerStats.js"></script> -->
+    </body>
+</html>
